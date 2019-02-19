@@ -35,10 +35,217 @@ h2
 	font-size: 30px
 	color: #57cbf4
 
-
-
-
+i, a
+	color: #fff
 	
+
+
+
+
+
+.top-line
+	background-color: $accent2
+	line-height: 40px
+	position: relative
+	.phone
+		font-size: 12px
+		.fa
+			margin: 0 6px
+
+.soc
+	position: absolute
+	right: 0
+	ul, li
+		display: inline-block
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li
+			padding-right: 13px
+
+
+.header-line
+	line-height: 100px
+	background-color: $accent
+	.logo
+		margin: 0 3px
+
+.main-menu
+	position: absolute
+	right: 65px
+	display: block
+	ul,li
+		display: inline-block
+		list-style-type: none
+		padding: 0
+		margin: 0
+		li
+			padding: 0 10.3px
+			&.active a
+				border: 1px solid #fff
+				margin-right: -5px
+		a
+			border-radius: 5px
+			text-decoration: none
+			font-family: opensans, serif
+			font-weight: 600
+			text-transform: uppercase
+			font-size: 13px
+			display: block
+			height: 39px
+			width: 81px
+			text-align: center
+			line-height: 39px
+			// transition: color .15s ease, background .25s ease
+			&:hover
+				background-color: #fff
+				color: $accent
+				
+	.classes
+		position: relative
+		padding: 0
+		a
+			width: 115px
+			&:before
+				position: absolute
+				color: #7bd3f5
+				left: 15px
+				content: "\f105"
+				font-family: fontawesome
+		&.open ul
+			display: block
+		&.open a:before
+			content: "\f107"
+			left: 12px
+		ul
+			background-color: white
+			border-radius: 5px
+			padding: 0
+			position: absolute
+			z-index: 1
+			margin: 0
+			padding: 0
+			line-height: 2.7
+			margin: 10px 0 0 5px
+			display: none
+			&:before
+				content: ""
+				border: 7px solid transparent
+				border-bottom: 7px solid white
+				position: absolute
+				top: -14px
+				left: 13px
+			li
+				white-space: nowrap
+				display: inline-block
+				border-radius: 5px
+				padding: 0 5px
+				a
+					padding-left: 23px
+					text-align: left
+					width: 190px
+					transition: all .25s ease
+					color: $accent
+					&:hover
+						color: $accent
+					&:before
+						color: #fff
+					&:hover
+						width: 200px
+						background-color: $accent
+						color: #fff
+
+
+
+
+.mobile-menu-button
+	display: none
+	text-align: center
+
+.mobile-menu
+	// display: none
+	background-color: lighten($accent, 3)
+	border-top: 1px solid lighten($accent, 5)
+	.top-menu
+		display: block
+		position: static
+		text-align: center
+
+
+
+.section-first
+	text-align: center
+	h1
+		margin-top: 105px
+		color: #505961
+		font-weight: 200
+		font-size: 38px
+	p
+		font-weight: 200
+		font-size: 16px
+		color: #8b9297
+		margin-bottom: 83px
+
+.livecontainer
+	height: 250px
+	background-color: #b7b7b7
+	border-bottom: 4px solid $accent
+	margin-bottom: 10px
+	> div
+		background-color: $accent
+		text-transform: uppercase
+		padding: 0px 19px
+		line-height: 50px
+		text-align: left
+		position: relative
+		span:first-of-type
+			font-weight: 600
+			font-size: 18px
+		span:nth-of-type(2)
+			font-size: 18px
+			font-style: italic
+		span:last-of-type
+			font-weight: bold
+			font-size: 11px
+			position: absolute
+			right: 17px
+
+.all-classes
+	background-color: $accent
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		border-right: 1px dotted #fff
+		// &:after
+			// border-left: 1px dashed #fff
+		li
+			position: relative
+			margin: 7px 30px
+			padding: 11px 0px
+			font-size: 14px
+			text-transform: uppercase
+			border-bottom: 1px dotted #fff
+			&:before
+				content: '\f017'
+				font-family: fontawesome
+				margin-right: 9px
+			div
+				display: inline-block
+				position: absolute
+				right: 0
+				a
+					padding-left: 19px
+
+
+
+
+
+
+
+
+
+
 
 
 
