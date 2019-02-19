@@ -10,6 +10,7 @@
 	color: #fff
 
 body
+	background-color: #f3f3f3
 	font-size: 16px
 	min-width: 320px
 	position: relative
@@ -34,10 +35,13 @@ h2
 	font-weight: 200
 	font-size: 30px
 	color: #57cbf4
+	text-transform: uppercase
+	text-align: center
 
 i, a
 	color: #fff
-	
+
+
 
 
 
@@ -210,19 +214,21 @@ i, a
 			position: absolute
 			right: 17px
 
+
+.second-section
+	h2
+		margin: 50px 0 12px
+
 .all-classes
 	background-color: $accent
 	ul
 		list-style-type: none
 		padding: 0
 		margin: 0
-		border-right: 1px dotted #fff
-		// &:after
-			// border-left: 1px dashed #fff
 		li
 			position: relative
-			margin: 7px 30px
-			padding: 11px 0px
+			margin: 11px 30px 18px
+			padding: 8.4px 0
 			font-size: 14px
 			text-transform: uppercase
 			border-bottom: 1px dotted #fff
@@ -236,13 +242,78 @@ i, a
 				right: 0
 				a
 					padding-left: 19px
+	>div:first-of-type ul
+		border-right: 1px dotted #fff
 
 
+.button
+	font-size: 14px
+	font-weight: 600
+	border: 1px solid #fff
+	padding: 10.5px 20px
+	border-radius: 3px
+	&:hover
+		background-color: #fff
+		color: $accent2
+		text-decoration: none
+
+.membership-prices
+	background-color: $accent2
+	text-align: center
+	padding-top: 49px
+	height: 250px
+	h3
+		font-size: 18px
+		font-weight: 400
+	p
+		font-weight: 200
+		font-size: 16px
+		line-height: 1.5
+		margin-bottom: 27px
+	
 
 
-
-
-
+.our-trainers
+	background-color: #fff
+	text-align: center
+	height: 250px
+	padding: 35px 0 30px	
+	line-height: 1
+	position: relative
+	.name
+		font-weight: bold
+		font-size: 14px
+		color: $accent
+		white-space: nowrap
+		text-transform: uppercase
+		margin: 8px 0 0
+	span
+		font-style: italic
+		font-size: 12px
+		color: $accent
+		text-transform: uppercase
+	p
+		font-style: italic
+		font-size: 12px
+		color: #606060
+		line-height: 1.2
+		margin-top: 10px
+	.soc-trainers
+		display: inline-block
+		position: absolute
+		right: 38px
+		i
+			color: $accent
+	.like-trainers
+		position: absolute
+		display: inline-block
+		left: 41px
+	>div:first-of-type 
+		border-right: 1px dotted #a9ddf1
+		// i
+			// color: red
+	a i
+		color: #b8b8b8
 
 
 
