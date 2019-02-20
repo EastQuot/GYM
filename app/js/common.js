@@ -46,8 +46,36 @@ $(function () {
 			e.preventDefault();
 			e.target.style.color = e.target.style.color == 'rgb(2, 158, 198)' ? '' : 'rgb(2, 158, 198)';
 		}
-	
 	}
+
+
+	$(document).ready(function(){
+		$('.our-trainers').owlCarousel({
+		// loop:true,
+    pagination:false,
+    nav:true,
+    items:2,
+		navText:"",
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items : 1
+			},
+			400: {
+				items : 2
+			},
+			768: {
+				items : 3
+			},
+			992: {
+				items : 2
+			}
+		}
+		})
+		
+	});
+
+
 
 
 

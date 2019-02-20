@@ -37,6 +37,7 @@ h2
 	color: #57cbf4
 	text-transform: uppercase
 	text-align: center
+	margin: 69px 0 12px
 
 i, a
 	color: #fff
@@ -305,15 +306,113 @@ i, a
 		i
 			color: $accent
 	.like-trainers
-		position: absolute
 		display: inline-block
-		left: 41px
-	>div:first-of-type 
+		margin-right: 60%
+		// position: relative
+	&-item
 		border-right: 1px dotted #a9ddf1
-		// i
-			// color: red
 	a i
 		color: #b8b8b8
+
+	.owl-dots
+		display: none
+	.owl-prev
+		width: 19px
+		height: 39px
+		background: url(../img/arrowsx.png) center center no-repeat !important
+		border: none
+		position: absolute
+		top: 109px
+		left: 9px
+	.owl-next
+		width: 19px
+		height: 39px
+		background: url(../img/arrowdx.png) center center no-repeat !important
+		border: none
+		position: absolute
+		top: 109px
+		right: 8px
+	.owl-prev, .owl-next
+		&:focus
+			border: none
+			outline: none
+
+.owl-carousel .owl-item img
+	display: inline-block
+	width: auto
+
+
+
+.next-event
+	background-color: #a5e5fe
+.next-event-item
+	text-align: center
+	padding: 13px 0 9px
+	margin: 0 40px 0 8px
+	border-bottom: 1px solid #d1f2fe
+	.date
+		font-size: 16px
+		font-weight: bold
+		text-transform: uppercase
+		display: block
+		margin-right: 17px
+	.placehold
+		display: inline-block
+		height: 70px
+		width: 120px
+		background-color: #b7b7b7
+	.hours
+		padding-top: 5px
+		font-size: 10px
+		font-weight: bold
+		color: #fe0000
+		margin: 0
+	h3
+		line-height: 1
+		font-size: 18px
+		color: #292929
+		text-transform: uppercase
+		margin-bottom: 5px
+		font-weight: 400
+	p
+		font-size: 12px
+		line-height: 1.1
+		color: #252525
+		margin: 0
+	.button-booking
+		font-size: 10px
+		font-weight: 600
+		color: #ff0000
+		text-transform: uppercase
+		border: 1px solid #3f4c51
+		padding: 1.5px 19px
+
+
+
+.from-the-blog
+	background-color: #d4d6d6
+	padding: 13px 20px 0px 
+	img
+		float: left
+		vertical-align: top
+		margin-bottom: 9px
+		margin-right: 14px
+	p
+		font-size: 13px
+		margin: 0
+	.date
+		font-size: 13px
+		color: black
+		display: block
+		&:after
+			content: ''
+			display: block
+			clear: both
+
+
+
+
+
 
 
 
