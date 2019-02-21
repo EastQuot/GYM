@@ -50,6 +50,7 @@ $(function () {
 
 
 	$(document).ready(function(){
+
 		$('.our-trainers').owlCarousel({
 		// loop:true,
     pagination:false,
@@ -73,6 +74,31 @@ $(function () {
 		}
 		})
 		
+		$('.gallery').owlCarousel({
+			// loop:true,
+			pagination:false,
+			nav:true,
+			items:1,
+			navText:"",
+			responsiveClass: true,
+			responsive: {
+				0: {
+					items : 0
+				},
+				400: {
+					items : 1
+				},
+				768: {
+					items : 1
+				},
+				992: {
+					items : 1
+				}
+			}
+		})
+			
+
+
 	});
 
 

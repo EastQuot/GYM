@@ -43,7 +43,8 @@ i, a
 	color: #fff
 
 
-
+.container
+	transition: max-width .5s ease
 
 
 
@@ -311,6 +312,7 @@ i, a
 		// position: relative
 	&-item
 		border-right: 1px dotted #a9ddf1
+		margin-right: -1px
 	a i
 		color: #b8b8b8
 
@@ -411,9 +413,52 @@ i, a
 
 
 
+.gallery
+	.owl-dots
+		display: none
+	.owl-prev
+		width: 61px
+		height: 58px
+		background: url(../img/arrowsx.png) #fff 17px center no-repeat !important
+		border: 1px solid transparent
+		border-radius: 10em
+		position: absolute
+		top: 44%
+		left: 10px
+		opacity: .8
+	.owl-next
+		width: 61px
+		height: 58px
+		background: url(../img/arrowdx.png) #fff center center no-repeat !important
+		border: 1px solid transparent
+		border-radius: 10em
+		position: absolute
+		top: 44%
+		right: 10px
+		opacity: .8
+	.owl-prev, .owl-next
+		&:focus
+			border: none
+			outline: none
 
 
 
+.partner
+	>div
+		text-align: right
+	>div:nth-child(even)
+		text-align: left
+	img
+		margin: 30px 15px 18px
+
+
+
+
+
+.fifth-section
+	margin-top: 115px
+	.map img
+		width: 100%
 
 
 
