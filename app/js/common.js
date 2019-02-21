@@ -15,7 +15,6 @@ $(function () {
 
 
 	$('.mobile-menu-button').click(function () {
-		console.log(topMenu.clientHeight)
 		$('.mobile-menu').stop().slideToggle();
 	})
 
@@ -101,8 +100,12 @@ $(function () {
 
 	});
 
-
-
+	$('.footer-menu h4').click(function () {
+		$('.footer-menu ul').stop().slideToggle();
+	})
+	$('.community h4').click(function () {
+		$('.community ul').stop().slideToggle();
+	})
 
 
 });

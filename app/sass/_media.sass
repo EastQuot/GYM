@@ -29,8 +29,17 @@
       img
         margin-left: 30px
 
-
+  .info p
+    display: none
       
+  .footer .signup form
+    input[type=text] 
+      width: 200px
+    .btn
+      padding-left: 15px
+      padding-right: 15px
+      &:after
+        padding-left: 9px
   
 
 // ≥992px
@@ -56,6 +65,20 @@
   .from-the-blog
     padding: 18px 14px 8px 20px 
 
+  .sixth-section, .fifth-section
+    margin: 50px 0 
+
+
+  .footer
+    padding: 30px 0
+    .info
+      img
+        margin-bottom: 20px
+      div
+        justify-content: center
+        font-size: 14px
+
+
 // ≥768px
 +media-breakpoint-down(sm)
 
@@ -66,10 +89,16 @@
       img
         margin-left: 0px
 
+  .signup
+    h4
+      display: none
+
+
+      
 
 // ≥576px
 +media-breakpoint-down(xs)
-  .top-line
+  .soc-line
     display: none
 
   .all-classes ul li div a
@@ -81,6 +110,15 @@
   
   .next-event-item
     padding: 13px 5px 9px 5px
+
+  .footer-menu, .community
+    h4
+      margin: 15px 0 7px !important
+    ul
+      display: none
+
+
+
 
 /*==========  Mobile First  ==========*/
 
