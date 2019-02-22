@@ -51,23 +51,23 @@ i, a
 
 .soc-line
 	background-color: $accent2
+	// padding: 7px 0
 	line-height: 40px
-	position: relative
 	.phone
 		font-size: 12px
 		.fa
 			margin: 0 6px
+	.soc
+		text-align: right
+	nav
+		ul, li
+			display: inline-block
+			padding: 0
+			margin: 0
+			list-style-type: none
+			li
+				padding-right: 13px
 
-.soc
-	position: absolute
-	right: 0
-	ul, li
-		display: inline-block
-		padding: 0
-		margin: 0
-		list-style-type: none
-		li
-			padding-right: 13px
 
 
 .header-line
@@ -86,43 +86,47 @@ i, a
 		padding: 0
 		margin: 0
 		li
-			padding: 0 10.3px
+			padding: 0 1px
 			&.active a
 				border: 1px solid #fff
 				margin-right: -5px
 		a
 			border-radius: 5px
+			padding: 3px 20px 1px
 			text-decoration: none
 			font-family: opensans, serif
 			font-weight: 600
 			text-transform: uppercase
 			font-size: 13px
 			display: block
-			height: 39px
-			width: 81px
 			text-align: center
 			line-height: 39px
+			border: 1px solid transparent
 			// transition: color .15s ease, background .25s ease
+			&:active
+				border: 1px solid #fff
+				background-color: #fff
+				color: $accent
 			&:hover
+				border: 1px solid #fff
 				background-color: #fff
 				color: $accent
 				
 	.classes
 		position: relative
-		padding: 0
 		a
-			width: 115px
+			padding: 0 36px
 			&:before
 				position: absolute
 				color: #7bd3f5
 				left: 15px
 				content: "\f105"
 				font-family: fontawesome
-		&.open ul
-			display: block
 		&.open a:before
 			content: "\f107"
 			left: 12px
+		&.open ul
+			display: block
 		ul
 			background-color: white
 			border-radius: 5px
@@ -160,6 +164,7 @@ i, a
 						width: 200px
 						background-color: $accent
 						color: #fff
+					// &:hover	
 
 
 
@@ -167,9 +172,10 @@ i, a
 .mobile-menu-button
 	display: none
 	text-align: center
+	text-transform: uppercase
 
 .mobile-menu
-	// display: none
+	display: none
 	background-color: lighten($accent, 3)
 	border-top: 1px solid lighten($accent, 5)
 	.top-menu
@@ -481,6 +487,7 @@ i, a
 				font-family: opensans, serif
 				font-weight: 600
 				font-size: 30px
+				font-style: normal
 		ul 
 			padding: 0
 			margin: 0
@@ -514,8 +521,9 @@ i, a
 
 .sixth-section
 	margin: 118px 0 107px
-	p
+	h3
 		font-size: 14px
+		font-weight: normal
 		color: $accent2
 		margin: 0 25px
 		span
@@ -551,7 +559,7 @@ i, a
 				border: 1px solid #b9e8fa
 				padding: 8px 23px 7px
 				width: 337px
-				display: block
+				// display: block
 				margin-bottom: 18px
 				&::-moz-input-placeholder
 					color: #00afec
@@ -602,6 +610,8 @@ i, a
 			font-size: 18px
 			font-weight: normal
 			margin-bottom: 15px
+			&:hover
+				cursor: pointer
 		ul
 			list-style-type: none
 			padding: 0
@@ -624,5 +634,57 @@ i, a
 	i
 		margin-right: 4px
 		
+
+@mixin opacity($opacity)
+	opacity: $opacity / 100
+	filter: alpha(opacity = $opacity)
+
+.preloader
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	z-index: 5
+	background-color: $accent
+	opacity: .9
+	.pulse
+		position: relative
+		left: 50%
+		top: 50vh
+		margin-left: -40px
+		margin-top: -40px
+		&:before, &::after
+			content: ''
+			border: 5px solid $accent2
+			width: 80px
+			height: 80px
+			border-radius: 500px
+			position: absolute
+		&:before
+			animation: pulse-outer .7s ease-in infinite
+		&:after
+			animation: pulse-inner .7s linear infinite
+
+@keyframes pulse-outer
+	0%
+		@include opacity(100)
+	50%
+		@include opacity(50)
+	0%
+		@include opacity(0)
+
+@keyframes pulse-inner
+	0%
+		@include opacity(0)
+		transform: scale(0)
+	100%
+		@include opacity(100)
+		transform: scale(1)
+
+
+
+
+
 
 @import "media" // Always at the end
